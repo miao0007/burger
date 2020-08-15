@@ -1,19 +1,31 @@
-#burgerImg {
-    width: 400px;
+#burgerPicture {
+    width: 200px;
     text-align: center;
+    border-radius: 10px;
+}
+.container-fluid{
+    background-color: rgb(4, 133, 219);
 }
 
-body {
-    background-color: #f07c21!important;
+.title{
+    font-family: 'Comfortaa', cursive; 
+    font-weight: bold;
 }
+
+
 
 ul, li, input {
-    background-color: #f0c821!important;
+    background-color:#68cae7;
 }
 
+.d-inline-flex{
+    font-size: 20px;
+}    
 h1, h3 {
-    color: #643319;
+    color: khaki;
+    font-family: 'Comfortaa', cursive;
 }
+
 
 .form-control{
     width: 300px!important;
