@@ -16,7 +16,7 @@ router.get("/", (req,res) => {
 router.post("/api/hamburger", (req,res)=> {
     // insert burger into db
     burgers.insertOne(req.body.name, false, (result)=>{
-        if(result.changedRows ==1){
+        if(result.changedRows ===1){
             return res.status(404).end();
         }else{
             res.status(200).end();
@@ -29,7 +29,7 @@ router.post("/api/hamburger", (req,res)=> {
 router.put("/api/hamburger/:id", (req,res)=>{
     // update hamburger
     burgers.updateOne(req.params.id, true, (result) => {
-        if (result.changedRows == 0) {
+        if (result.changedRows === 0) {
             return res.status(404).end();
         } else{
             res.status(200).end();

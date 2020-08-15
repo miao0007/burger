@@ -26,7 +26,6 @@ h1, h3 {
     font-family: 'Comfortaa', cursive;
 }
 
-
-.form-control{
-    width: 300px!important;
+#burgerName{
+    width: 300px;
 }
