@@ -4,17 +4,18 @@ const dbConfig = require("./db.config.js");
 let connection;
 
 // build connection to JAWSDB for Heroku
-// if (process.env.JAWSDB_URL){
-//     connection = mysql.createConnection(process.env.JAWSDB_URL);
-//   } else {
-    connection = mysql.createPool({
-      host: dbConfig.HOST,
-      user: dbConfig.USER,
-      password: dbConfig.PASSWORD,
-      database: dbConfig.DB
+if (process.env.JAWSDB_URL){
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+  } else {
+    connection = mysql.createConnection({
+      host: "localhost",
+      port: 3306,
+      user: "root",
+      password: "huanXI861109",
+      database: "burgers_db"
     });
   
-  // }
+  }
 
 // make connection
 connection.connect(function(err){
