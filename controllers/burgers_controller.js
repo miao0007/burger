@@ -6,6 +6,7 @@ const burgers = require("../models/burgers.js");
 
 // Route get, get all burgers from database
 router.get("/", (req,res) => {
+    
     // send all burgers from database to index
     burgers.selectAll((data) =>{
         res.render("index", {hamburgers: data});
@@ -14,6 +15,7 @@ router.get("/", (req,res) => {
 
 // use post route for adding new burger to database
 router.post("/api/hamburger", (req,res)=> {
+
     // insert burger into db
     burgers.insertOne(req.body.name, false, (result)=>{
         if(result.changedRows ===1){
@@ -27,6 +29,7 @@ router.post("/api/hamburger", (req,res)=> {
 // use put route to update hamburger to be devoured
 
 router.put("/api/hamburger/:id", (req,res)=>{
+
     // update hamburger
     burgers.updateOne(req.params.id, true, (result) => {
         if (result.changedRows === 0) {
@@ -40,6 +43,7 @@ router.put("/api/hamburger/:id", (req,res)=>{
 // Use delete router to delete hamburger from db
 
 router.delete("/api/hamburger/:id", (req,res)=>{
+
     // delete selected hamburger
     burgers.delete(req.params.id, (result)=>{
         if(result.affectedRows == 0){
