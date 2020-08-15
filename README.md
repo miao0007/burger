@@ -38,5 +38,5 @@ Email: miao188@hotmail.com
 ## Deployed Site Preview
 
 ### Web Page
-![Alt First Page](public\assets/img/burger.png)
+![Alt First Page](public/assets/img/burger.png)
 
