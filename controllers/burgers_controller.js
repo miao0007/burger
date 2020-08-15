@@ -1,7 +1,7 @@
 // import Express and burgers.js
 const express = require("express");
 const router = express.Router();
-const burgers = require("../models/burger");
+const burgers = require("../models/burgers.js");
 
 
 // Route get, get all burgers from database
