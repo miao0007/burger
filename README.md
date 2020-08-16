@@ -5,7 +5,7 @@
 ## Burger Logger
 
 ## Live URL
-https://burger-logger-jeff.herokuapp.com/
+https://warm-hollows-28275.herokuapp.com/
 
 ## Description
 To create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM . Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
